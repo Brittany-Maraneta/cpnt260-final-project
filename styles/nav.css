@@ -1,0 +1,47 @@
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  font-size: 17px;
+  align-items: center;
+  background-color: hsla(0, 0%, 0%, 0.338);
+  display: flex;
+
+  justify-content: space-between;
+  padding: 1em 2em;
+  position: fixed;
+  top: 0;
+}
+
+.topnav a:hover {
+  color: hsl(350, 100%, 88%);
+  transition: 0.3s;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.current {
+  color: hsl(350, 100%, 88%);
+}
+
+/*hamburger menu for mobile*/
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  color: hsl(0, 0%, 100%);
+}
+
+.topnav {
+  position: relative;
+}
+
+.navlist {
+  display: flex;
+  gap: 1em;
+}
