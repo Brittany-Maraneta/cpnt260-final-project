@@ -12,7 +12,9 @@ body {
 }
 
 header {
-  background-image: url("https://images.pexels.com/photos/4992807/pexels-photo-4992807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-image: url("https://images.pexels.com/photos/7244503/pexels-photo-7244503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  margin-top: 0;
+  /*("https://images.pexels.com/photos/4992807/pexels-photo-4992807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,43 +1,63 @@
-svg {
-  margin-top: 7em;
-  mix-blend-mode: multiply;
-  border-radius: 15%;
+.box {
+  opacity: 100%;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.backname {
-  fill: hsl(351, 100%, 86%);
+/*main logo*/
+.svg-element {
+  fill: hsl(0, 0%, 100%); /* Initial fill color */
+  transition: fill 0.3s ease; /* Smooth transition effect */
+
+  /* Optional: Add other styles as needed */
 }
 
-.backdrop {
-  fill: hsl(351, 100%, 86%);
-  animation-play-state: paused;
+.svg-element:hover {
+  fill: hsl(350, 100%, 88%);
+  transition: 0.3s;
 }
 
-svg:hover .backdrop {
-  animation-duration: 3000ms;
-  transform-origin: 24.691px 35.778px;
-  animation-direction: reverse;
-  animation-name: slide;
-  animation-play-state: running;
+.svg-name {
+  fill: hsl(0, 0%, 0%);
 }
 
-svg:hover .person {
-  animation-duration: 3500ms;
-  transform-origin: 24.691px 35.778px;
-  animation-direction: reverse;
-  animation-name: slide;
-  animation-play-state: running;
+.svg-name:hover {
+  fill: hsl(350, 100%, 88%);
+  transition: 0.3s;
 }
 
-@keyframes slide {
-  from {
-    transform: rotate(0deg);
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
-.person {
-  animation-play-state: paused;
+.image-animation {
+  animation: fadeInOut 10s infinite; /* Adjust the duration as needed */
+}
+
+/*about me logo*/
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(200px); /* Adjust the distance as needed */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.logo {
+  animation: moveLeftRight 10s linear infinite; /* Adjust the duration as needed */
+  fill: hsl(350, 100%, 88%);
+  stroke: #000000;
 }
