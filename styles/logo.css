@@ -1,16 +1,7 @@
-.box {
-  opacity: 100%;
-  font-size: 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
 /*main logo*/
 .svg-element {
   fill: hsl(0, 0%, 100%); /* Initial fill color */
   transition: fill 0.3s ease; /* Smooth transition effect */
-
-  /* Optional: Add other styles as needed */
 }
 
 .svg-element:hover {
@@ -60,4 +51,6 @@
   animation: moveLeftRight 10s linear infinite; /* Adjust the duration as needed */
   fill: hsl(350, 100%, 88%);
   stroke: #000000;
+  justify-content: center;
+  height: auto;
 }

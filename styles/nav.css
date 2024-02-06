@@ -3,7 +3,7 @@
   overflow: hidden;
   font-size: 17px;
   align-items: center;
-  background-color: grey;
+  background-color: hsl(0, 0%, 50%);
   display: flex;
   justify-content: space-between;
   padding: 1em 2em;
@@ -24,7 +24,11 @@
   color: hsl(350, 100%, 88%);
 }
 
-/*hamburger menu for mobile*/
+/* hamburger menu */
+.menu-toggle {
+  display: none;
+}
+
 .hamburger {
   font-size: 24px;
   cursor: pointer;
@@ -43,4 +47,34 @@
 .navlist {
   display: flex;
   gap: 1em;
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 600px) {
+  .navlist {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 20%);
+    z-index: 1;
+  }
+
+  .menu-toggle:checked + .topnav .navlist {
+    display: flex;
+  }
+
+  .menu-toggle:checked + .hamburger {
+    color: hsl(350, 100%, 88%);
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.current {
+  color: hsl(350, 100%, 88%);
 }

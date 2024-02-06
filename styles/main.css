@@ -1,5 +1,5 @@
 /* Colors 
-60% : background-color:hsl(208, 100%, 97%);
+60% : background-color:hsl(0, 0%, 96%);
 30% : hsla(0, 0%, 0%, 0.338);
 10% : accent-colors: hsl(350, 100%, 88%); */
 
@@ -9,6 +9,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   scroll-behavior: smooth;
   text-align: center;
+  background-color: hsl(0, 0%, 96%);
 }
 
 header {
@@ -66,7 +67,8 @@ button:hover {
   background-size: cover;
   background-position: center;
   position: relative;
-  text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 footer {
