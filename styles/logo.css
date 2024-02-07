@@ -37,20 +37,24 @@
 /*about me logo*/
 @keyframes moveLeftRight {
   0% {
-    transform: translateX(5px);
+    transform: translateX(0%);
   }
   50% {
-    transform: translateX(200px); /* Adjust the distance as needed */
+    transform: translateX(100%); /* Adjust the distance as needed */
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
+}
+
+.logo-container {
+  width: 100%;
+  text-align: center;
 }
 
 .logo {
   animation: moveLeftRight 10s linear infinite; /* Adjust the duration as needed */
   fill: hsl(350, 100%, 88%);
   stroke: #000000;
-  justify-content: center;
   height: auto;
 }
