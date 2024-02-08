@@ -3,7 +3,7 @@
   overflow: hidden;
   font-size: 17px;
   align-items: center;
-  background-color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 0%, 20%);
   display: flex;
   justify-content: space-between;
   padding: 1em 2em;
@@ -12,6 +12,22 @@
 }
 
 .topnav a:hover {
+  color: hsl(350, 100%, 88%);
+  transition: 0.3s;
+}
+
+.bottomnav {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 20%);
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomnav a:hover {
   color: hsl(350, 100%, 88%);
   transition: 0.3s;
 }

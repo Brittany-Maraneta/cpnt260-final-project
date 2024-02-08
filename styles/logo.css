@@ -58,3 +58,17 @@
   stroke: #000000;
   height: auto;
 }
+
+@media only screen and (max-width: 600px) {
+  .logo-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    animation: moveLeftRight 10s linear infinite; /* Adjust the duration as needed */
+    fill: hsl(350, 100%, 88%);
+    stroke: #000000;
+    height: auto;
+  }
+}
