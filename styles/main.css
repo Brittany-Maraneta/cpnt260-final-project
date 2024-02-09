@@ -113,13 +113,6 @@ footer {
     max-height: 20em;
   }
 
-  .h1.b {
-    font-size: 1.5em;
-  }
-  .h2.a {
-    font-size: 1em;
-  }
-
   .part2 {
     height: 200vh;
   }
@@ -140,10 +133,10 @@ footer {
   min-width: 230px;
   max-width: 315px;
   width: 100%;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   text-align: left;
   font-size: 16px;
-  background: #000;
+  background: hsl(0, 0%, 0%);
 }
 
 .maincard *,
@@ -247,4 +240,156 @@ footer {
 .maincard.hover h4 {
   -webkit-transition-delay: 0.35s;
   transition-delay: 0.35s;
+}
+
+.item {
+  position: relative;
+}
+
+.item a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+/* WebDev Cards*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+.webcard {
+  font-family: "Montserrat", Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 8px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+  font-size: 16px;
+  background: hsl(0, 0%, 0%);
+  height: 300px;
+}
+
+.webcard *,
+.snip1577:before,
+.snip1577:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.webcard img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+  height: auto;
+}
+
+.webcard:before,
+.webcard:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: "";
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.webcard:before {
+  width: 0;
+  height: 1px;
+}
+
+.webcard:after {
+  height: 0;
+  width: 1px;
+}
+
+.webcard figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+.webcard h3,
+.webcard h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.webcard h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.webcard:hover img,
+.webcard.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+
+.webcard:hover:before,
+.webcard.hover:before,
+.webcard:hover:after,
+.webcard.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.webcard:hover:before,
+.webcard.hover:before {
+  width: 40px;
+}
+
+.webcard:hover:after,
+.webcard.hover:after {
+  height: 40px;
+}
+
+.webcard:hover h3,
+.webcard.hover h3,
+.webcard:hover h4,
+.webcard.hover h4 {
+  opacity: 1;
+}
+
+.webcard:hover h3,
+.webcard.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.webcard:hover h4,
+.webcard.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+.item {
+  position: relative;
+}
+
+.item a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+@media (min-width: 1024px) {
+  .webcard {
+    width: calc(33.33% - 16px); /* Adjust width to fit three cards per row */
+  }
 }

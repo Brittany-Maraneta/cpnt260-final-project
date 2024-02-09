@@ -1,20 +1,13 @@
 h2 {
   margin-top: 0.5em;
-  margin-bottom: 0em;
+  margin-bottom: 1em;
   font-size: 25px;
   line-height: 1.5;
 }
 
 h2.a {
-  margin-top: 3em;
-  margin-bottom: 0em;
   font-size: 25px;
-}
-
-h2.b {
-  font-size: 25px;
-  margin: auto;
-  color: grey;
+  line-height: 1.5;
 }
 
 h1.b {
@@ -32,7 +25,7 @@ h3.a {
 
 h1 {
   margin-top: -3em;
-  margin-bottom: 0em;
+  margin-bottom: 1em;
   font-size: 40px;
 }
 
@@ -68,4 +61,18 @@ p.footer {
 p a:hover {
   color: hsl(350, 100%, 88%);
   transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  h2.a {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h1.b {
+    font-size: 1em;
+  }
 }
