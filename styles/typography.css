@@ -1,5 +1,5 @@
 h2 {
-  margin-top: 0.5em;
+  margin-top: 0em;
   margin-bottom: 1em;
   font-size: 25px;
   line-height: 1.5;
@@ -8,6 +8,7 @@ h2 {
 h2.a {
   font-size: 25px;
   line-height: 1.5;
+  margin: 3em;
 }
 
 h1.b {
@@ -21,6 +22,7 @@ h3.a {
   margin-top: 1em;
   margin-bottom: 0em;
   font-size: 18px;
+  margin: 3me;
 }
 
 h1 {
@@ -30,9 +32,9 @@ h1 {
 }
 
 h1.c {
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-bottom: 1em;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .part2 {
@@ -46,6 +48,7 @@ h3 {
   margin-top: 0.5em;
   margin-bottom: 1em;
   font-size: 20px;
+  margin: 3em;
 }
 
 p {
@@ -73,6 +76,6 @@ p a:hover {
   }
 
   h1.b {
-    font-size: 1em;
+    font-size: 2em;
   }
 }
