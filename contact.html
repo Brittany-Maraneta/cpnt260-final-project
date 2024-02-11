@@ -30,37 +30,54 @@
     </div>
   </head>
   <body>
-    <h3>Contact Form</h3>
+    <main>
+      <div class="contact">
+        <h1 class="b">Contact me for more Info!</h1>
+        <div class="form-container">
+          <form action="https://formspree.io/f/mvoekjne" method="POST">
+            <label>
+              Your Name:
+              <input type="name" name="name" />
+            </label>
+            <br />
+            <label>
+              Your Email:
+              <input type="email" name="email" />
+            </label>
+            <br />
+            <label>
+              Your message:
 
-    <div class="container">
-      <form action="/action_page.php">
-        <label for="fname">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name.." />
+              <textarea name="message"></textarea>
+            </label>
 
-        <label for="email">Email</label>
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Your email..."
-        />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-
-        <label for="subject">Subject</label>
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="Write something.."
-          style="height: 200px"
-        ></textarea>
-
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
+    <footer>
+      <div class="footer">
+        <div class="bottomnav">
+          <h2>
+            <a href="index.html" class="current"><b>BMARAS</b></a>
+          </h2>
+          <ul class="navlist">
+            <li><a href="web-dev.html">Web Development</a></li>
+            <li><a href="photo.html">Photography</a></li>
+            <li><a href="designs.html" class="current">Designs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <p class="footer">
+          &copy; COPYRIGHT 2024
+          <a
+            href="https://www.google.com/maps/place/Calgary,+AB/@51.0271596,-114.4174685,10z/data=!3m1!4b1!4m6!3m5!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0447331!4d-114.0718831!16zL20vMDFyMzI?entry=ttu"
+            >Calgary, AB</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

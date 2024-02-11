@@ -71,29 +71,6 @@ footer {
 
 /* Media query for mobile view */
 @media only screen and (max-width: 600px) {
-  .navlist {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    background-color: hsl(0, 0%, 20%);
-    z-index: 1;
-  }
-
-  .menu-toggle:checked + .topnav .navlist {
-    display: flex;
-  }
-
-  .menu-toggle:checked + .hamburger {
-    color: hsl(350, 100%, 88%);
-  }
-
-  .hamburger {
-    display: block;
-  }
-
   .part2 h1 {
     font-size: 1.5em;
   }
@@ -131,8 +108,14 @@ footer {
     max-height: 35em;
   }
 
-  iframe {
+  .iframe {
     margin: auto;
+  }
+
+  .form-container {
+    align-items: center;
+    font-size: 15px;
+    height: 100vh;
   }
 }
 
@@ -535,4 +518,20 @@ footer {
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+/*form info contact me */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 50%;
+}
+
+.contact {
+  height: 100vh;
 }
