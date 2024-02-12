@@ -91,7 +91,7 @@ footer {
   }
 
   .part2 {
-    height: 200vh;
+    height: 300vh;
   }
 
   .header {
@@ -104,7 +104,7 @@ footer {
   }
 
   .designcard {
-    max-width: 0em;
+    max-width: auto;
     max-height: 35em;
   }
 

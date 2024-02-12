@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/logo.css" />
@@ -13,22 +16,21 @@
     <link rel="stylesheet" href="./styles/contact.css" />
 
     <title>BMARAS</title>
-
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-    <label for="menu-toggle" class="hamburger">&#9776;</label>
-
-    <div class="topnav">
-      <h2>
-        <a href="index.html"><b>BMARAS</b></a>
-      </h2>
-      <ul class="navlist">
-        <li><a href="web-dev.html">Web Development</a></li>
-        <li><a href="photo.html">Photography</a></li>
-        <li><a href="designs.html">Designs</a></li>
-        <li><a href="contact.html" class="current">Contact</a></li>
-      </ul>
-    </div>
   </head>
+  <div class="topnav" id="myTopnav">
+    <div class="bmaras">
+      <a href="index.html">BMARAS</a>
+    </div>
+    <a href="contact.html" class="first active">Contact</a>
+    <a href="photo.html">Photography</a>
+    <a href="designs.html">Designs</a>
+    <a href="web-dev.html">Web Development</a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
   <body>
     <main>
       <div class="contact">
@@ -66,8 +68,8 @@
           <ul class="navlist">
             <li><a href="web-dev.html">Web Development</a></li>
             <li><a href="photo.html">Photography</a></li>
-            <li><a href="designs.html" class="current">Designs</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="designs.html">Designs</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
           </ul>
         </div>
         <p class="footer">
@@ -79,5 +81,6 @@
         </p>
       </div>
     </footer>
+    <script src="nav.js"></script>
   </body>
 </html>
