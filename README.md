@@ -19,6 +19,5 @@ https://formspree.io/forms/mvoekjne/integration
 
 ## Above and Beyond
 
-Footer has a link to google maps in location
-
-Menu toggle for mobile hamburger -
+Footer has a link to google maps in location in all pgs
+Menu toggle for mobile hamburger in all pgs
