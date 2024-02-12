@@ -1,12 +1,8 @@
-# Assignment 4 - Full-page Layout
+# CPNT 260 - Final Project
 
 ## Brittany Maraneta
 
-https://brittany-maraneta.github.io/cpnt260-a4/
-
-## Reference on w3Schools
-
-Footer icon
+https://brittany-maraneta.github.io/cpnt260-final-project/
 
 ## Reference for images
 
@@ -14,6 +10,7 @@ https://www.pexels.com/
 
 ## Other References
 
+Hamburger Menu - w3Schools
 https://niemvuilaptrinh.medium.com/
 https://formspree.io/forms/mvoekjne/integration
 
