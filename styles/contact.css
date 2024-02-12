@@ -6,9 +6,10 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 2px;
   box-sizing: border-box;
-  margin-top: 6px;
+  margin-top: auto;
   margin-bottom: 16px;
   resize: vertical;
+  min-height: 50vh;
 }
 
 input[type="submit"] {
@@ -28,4 +29,30 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: grey;
   padding: 5px;
+  min-height: 50vh;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 50%;
+}
+
+.contact {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    align-items: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    resize: vertical;
+    min-height: 50vh;
+  }
 }

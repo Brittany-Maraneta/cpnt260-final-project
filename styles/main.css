@@ -71,20 +71,6 @@ footer {
 
 /* Media query for mobile view */
 @media only screen and (max-width: 600px) {
-  .part2 h1 {
-    font-size: 1.5em;
-  }
-  .part2 h2 {
-    font-size: 1em;
-  }
-  .part2 h3 {
-    font-size: 1em;
-  }
-
-  .part2 h2.a {
-    font-size: 1em;
-  }
-
   .maincard {
     max-width: 1em;
     max-height: 20em;
@@ -99,8 +85,8 @@ footer {
   }
 
   .webcard {
-    max-width: -0.5em;
-    max-height: 35em;
+    max-width: auto;
+    max-height: 25em;
   }
 
   .designcard {
@@ -110,12 +96,6 @@ footer {
 
   .iframe {
     margin: auto;
-  }
-
-  .form-container {
-    align-items: center;
-    font-size: 15px;
-    height: 100vh;
   }
 }
 
@@ -251,6 +231,7 @@ footer {
   bottom: 0px;
   left: 0px;
 }
+
 /* WebDev Cards*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
 .webcard {
@@ -518,20 +499,4 @@ footer {
   right: 0px;
   bottom: 0px;
   left: 0px;
-}
-
-/*form info contact me */
-
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-form {
-  width: 50%;
-}
-
-.contact {
-  height: 100vh;
 }
